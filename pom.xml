@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- POMのバージョン -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- プロジェクトのID -->
+    <groupId>junit.javalib</groupId>
+
+    <!-- プロジェクトの成果物名 -->
+    <artifactId>javalib</artifactId>
+
+    <!-- プロジェクトのバージョン -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 作成する成果物のパッケージングタイプ -->
+    <packaging>jar</packaging>
+
+    <!-- プロジェクトの表示名 -->
+    <name>javaのライブラリ</name>
+
+    <!-- POMのエンコーディング -->
+    <properties>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <defaultGoal>test</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- プロジェクトが依存するライブラリの情報。 -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
