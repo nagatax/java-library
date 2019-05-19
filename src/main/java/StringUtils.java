@@ -12,6 +12,7 @@ public class StringUtils {
             if (!m.find()) break;
             snake = m.replaceFirst("_" + m.group(1).toLowerCase());
         }
+        //
         return snake.replaceFirst("^_", "");
     }
 
