@@ -36,7 +36,7 @@
         <!-- <maven-war.version>3.0.0</maven-war.version> -->
 
         <!-- JUnit Properties -->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <easymock.version>3.4</easymock.version>
 
         <!-- Checkstyle Properties -->
